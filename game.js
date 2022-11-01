@@ -11,7 +11,7 @@ function getComputerChoice(){
 const getPlayerChoice = prompt("Choose rock, paper, or scissors" , "rock");
 
 //Create function for one game round. The function should return a string that declares a winner. 
-function playARound(playerChoice, computerChoice){
+function playRound(playerChoice, computerChoice){
     if (playerChoice === computerChoice){
         return ("It's a tie!!!")
     } 
@@ -30,12 +30,10 @@ function playARound(playerChoice, computerChoice){
 
 let playerChoice = getPlayerChoice;
 let computerChoice = getComputerChoice();
-console.log(playARound(playerChoice, computerChoice));
+console.log(playRound(playerChoice, computerChoice));
 console.log("You chose " + playerChoice);
 
 //Create a new function that loops the game-round-function 5 times and logs results in console
   var newRound = confirm("Play another round");
 
- if (newRound == true){
-    
- }
+ 
