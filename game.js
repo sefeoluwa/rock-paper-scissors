@@ -14,12 +14,12 @@ const getPlayerChoice = prompt("Choose rock, paper, or scissors" , "rock");
 function playARound(playerChoice, computerChoice){
     if (playerChoice === computerChoice){
         return ("It's a tie!!!")
-    }
+    } 
 
-    if (playerChoice === "rock"){
+   else if (playerChoice.toLowerCase() === "rock"){
         return ("You win!!!")
      }
-        if (playerChoice === "scissors"){
+     else if (playerChoice === "scissors"){
             return ("You win!!!")
         }
     
@@ -31,9 +31,11 @@ function playARound(playerChoice, computerChoice){
 let playerChoice = getPlayerChoice;
 let computerChoice = getComputerChoice();
 console.log(playARound(playerChoice, computerChoice));
-
+console.log("You chose " + playerChoice);
 
 //Create a new function that loops the game-round-function 5 times and logs results in console
+  var newRound = confirm("Play another round");
 
-
- 
+ if (newRound == true){
+    
+ }
