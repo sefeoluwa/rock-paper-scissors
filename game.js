@@ -7,33 +7,45 @@ function getComputerChoice(){
     return choices[Math.floor(Math.random()*choices.length)] 
 }
 
-//Use prompt to get user input
-const getPlayerChoice = prompt("Choose rock, paper, or scissors" , "rock");
+//create function that validates the winner of a game round
 
-//Create function for one game round. The function should return a string that declares a winner. 
-function playRound(playerChoice, computerChoice){
-    if (playerChoice === computerChoice){
-        return ("It's a tie!!!")
-    } 
-
-   else if (playerChoice.toLowerCase() === "rock"){
-        return ("You win!!!")
-     }
-     else if (playerChoice === "scissors"){
+    function playRound(playerChoice, computerChoice){
+        if (playerChoice === computerChoice){
+            return ("It's a tie!!!")
+        } 
+    
+       else if ((playerChoice.toLowerCase() == "rock" && computerChoice == "scissors") ||
+        (playerChoice.toLowerCase() == "paper" && computerChoice == "rock") || 
+        (playerChoice.toLowerCase() == "scissors" && computerChoice == "paper")){
             return ("You win!!!")
         }
-    
-    else {
-        return ("You lose! Paper beats rock")
+        
+        else {
+            return ("You lose! Paper beats rock")
+        }
     }
+
+  //Create function for one game round.
+
+function game(){
+    //Use prompt to get user input
+    const getPlayerChoice = prompt("Choose rock, paper, or scissors" , "rock");
+
+    let playerChoice = getPlayerChoice;
+    let computerChoice = getComputerChoice();
+      console.log("You chose " + playerChoice);
+      console.log(`Computer played ${computerChoice}`);
+      console.log(playRound(playerChoice, computerChoice));
+      
 }
 
-let playerChoice = getPlayerChoice;
-let computerChoice = getComputerChoice();
-console.log(playRound(playerChoice, computerChoice));
-console.log("You chose " + playerChoice);
 
 //Create a new function that loops the game-round-function 5 times and logs results in console
-  var newRound = confirm("Play another round");
+ function gameRound(){
+    for (let i = 0; i < 5; i++){
+       game();
+    }
+ }
 
+ 
  
