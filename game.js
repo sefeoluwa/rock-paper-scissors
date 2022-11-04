@@ -36,6 +36,7 @@ function game(){
       console.log("You chose " + playerChoice);
       console.log(`Computer played ${computerChoice}`);
       console.log(playRound(playerChoice, computerChoice));
+      console.log("***********************************");
       
 }
 
