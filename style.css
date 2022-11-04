@@ -1,0 +1,15 @@
+.button-div{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    width: 20%;
+    border-style: solid;
+    border-color: #86198F;
+    border-width: 3px;
+    font-size: 30px;
+    background-color: #67E8F9;
+}
