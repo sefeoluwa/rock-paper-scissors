@@ -5,7 +5,7 @@
     align-items: center;
 }
 
-.button{
+#button{
     width: 20%;
     border-style: solid;
     border-color: #86198F;
@@ -13,3 +13,4 @@
     font-size: 30px;
     background-color: #67E8F9;
 }
+

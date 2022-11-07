@@ -48,5 +48,10 @@ function game(){
     }
  }
 
+ //initiate game round with he click of a button
+ const btn = document.querySelector("#button")
+
+btn.addEventListener ('click' , game);
+
  
  
