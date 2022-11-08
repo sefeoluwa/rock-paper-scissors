@@ -1,19 +1,11 @@
-/*.main{
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items:center;
-   
+*{
+    background-color: #831843;
+    color: #ffffff;
+    font-family: 'Rubik Mono One', sans-serif;
 }
 
-#button{
-    width: 70%;
-    border-style: solid;
-    border-color: #86198F;
-    border-width: 3px;
-    font-size: 35px;
-    background-color: #67E8F9;
-    
+.heading{
+    font-family: 'Monoton', cursive;
 }
 
-*/
+.
