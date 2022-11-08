@@ -2,10 +2,35 @@
     background-color: #831843;
     color: #ffffff;
     font-family: 'Rubik Mono One', sans-serif;
+    display: border-box;
 }
 
 .heading{
     font-family: 'Monoton', cursive;
+    display:flex;
+    justify-content: center;
 }
 
-.
+.players{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.moves{
+    margin-top: 200px;
+    display: flex;
+    justify-content:center;
+
+}
+
+.buttons{
+    
+    display:flex;
+    justify-content: space-around;
+    }
+
+.button{
+    font:100px;
+}
