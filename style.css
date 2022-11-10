@@ -19,14 +19,16 @@
 }
 
 .moves{
-    margin-top: 200px;
+    margin-top: 250px;
     display: flex;
+    flex-direction: column;
     justify-content:center;
+    align-items:center;
 
 }
 
 .buttons{
-    
+    margin-top:100px;
     display:flex;
     justify-content: space-around;
     }

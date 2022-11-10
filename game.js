@@ -1,5 +1,7 @@
-//Declare objects rock, paper, and scissors
-const choices = ['rock', 'paper', 'scissors'];
+//Declare objects rock, paper, and scissors and assign them to buttons
+let rock = document.getElementById('buttonR');
+let paper = document.getElementById('buttonP');
+let scissors = document.getElementById('buttonS');
 
 
 //Create function to return a random choice between rock, paper, and scissors
@@ -49,9 +51,9 @@ function game(){
  }
 
  //initiate game round with he click of a button
- const btn = document.querySelector("#button")
+  
 
- btn.addEventListener ('click' , game);
+rock.addEventListener ('click' , game);
 
  
  
